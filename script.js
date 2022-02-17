@@ -7,7 +7,7 @@ adressclose.addEventListener('click', function() {
     document.querySelector('.adress-form').style.display = 'none';
 })
 
-//slider  
+// ấn mũi tên trái phải để chạy slide 
 let index = 0;
 const rightbtn = document.querySelector('.fa-chevron-right');
 const leftbtn = document.querySelector('.fa-chevron-left');
@@ -29,3 +29,20 @@ leftbtn.addEventListener("click", function() {
     document.querySelector('.slider-content-left-top').style.right = index*100+"%";
 });
 
+// ấn vào 5 chữ slide1,2,3,4,5 để chạy ảnh..................................................................
+let imgActive = document.querySelector('.active');
+const imgNumberLi = document.querySelectorAll('.slider-content-left-bottom li');
+    imgNumberLi.forEach(function(image,index){
+        image.addEventListener('click', function(){
+            removeactive();
+            document.querySelector(".slider-content-left-top").style.right = index*100+"%";
+            image.classList.add('active');
+        });
+    });
+
+function removeactive(){
+    let imgActive = document.querySelector('.active');
+    imgActive.classList.remove('active');
+}
+
+// slider tự chạy 

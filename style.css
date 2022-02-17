@@ -410,3 +410,13 @@ nav ul li:nth-child(9):hover a {
 .slider-content-left-top {
     transition:all 0.5s ease;
 }
+/* font sile 1*/
+
+.slider-content-left-bottom li.active{
+    border-top: 4px solid #fff200;
+    font-weight: bold;
+}
+.slider-content-left-bottom li {
+    border-top: 4px solid white;
+    
+}
