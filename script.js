@@ -9,6 +9,7 @@ adressclose.addEventListener('click', function() {
 
 // ấn mũi tên trái phải để chạy slide 
 let index = 0;
+
 const rightbtn = document.querySelector('.fa-chevron-right');
 const leftbtn = document.querySelector('.fa-chevron-left');
 const imgNumber = document.querySelectorAll('.slider-content-left-top img');
@@ -46,3 +47,13 @@ function removeactive(){
 }
 
 // slider tự chạy 
+function imgAuto(){
+    index = index +1;
+    if(index >= imgNumber.length-1){
+        index=0;
+    }
+    removeactive();
+    document.querySelector('.slider-content-left-top').style.right = index*100 +"%";
+    imgNumberLi[index].classList.add('active');
+}
+setInterval(imgAuto,3000);

@@ -420,3 +420,14 @@ nav ul li:nth-child(9):hover a {
     border-top: 4px solid white;
     
 }
+
+
+/* banner one */
+
+.baner-one {
+    margin-top:40px;
+}
+.baner-one img {
+    width: 97%;
+}
+
