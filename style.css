@@ -467,7 +467,7 @@ nav ul li:nth-child(9):hover a {
     transition:  0.5s;
 }
 .slider-product-one-content-item-text {
-    padding:20px;
+    padding-top:20px;
 
 }
 .slider-product-one-content-item-text li {
@@ -544,4 +544,112 @@ nav ul li:nth-child(9):hover a {
 }
 .slider-product-one-content-items:nth-child(3) {
     transform:translateX(200%);
+}
+
+/* fix lỗi 1 */
+
+.slider-content-left {
+    width: 70%;
+}
+.slider-content-right {
+    width:30%;
+    padding:0 0;
+   margin-right: -4px;
+}
+
+/*product gallery  */
+
+.product-gallery-one-content-product {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.product-gallery-one-content-product-item {
+    width: 19.9%;
+    padding:50px 12px 12px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.product-gallery-one-content-product-item:hover >img {
+    transform: translateY(-20px);
+}
+.product-gallery-one-content-product-item:hover {
+    box-shadow:3px 3px 3px #ddd;
+}
+.product-gallery-one-content-product-item > img {
+    width: 100%;
+
+}
+
+
+
+
+/*  */
+
+.product-gallery-one-content-product-item-text {
+    padding-top:20px;
+
+}
+.product-gallery-one-content-product-item-text li {
+    margin-bottom: 6px;
+}
+.product-gallery-one-content-product-item-text li:first-child {
+    width: 70%;
+    height: 20px;
+    background-color:red;
+    display:inline-block;
+    margin-bottom:20px;
+    align-items: center;
+    line-height:20px;
+    border-radius: 5px;
+}
+.product-gallery-one-content-product-item-text li:first-child p {
+    color: #fff;
+    font-size:11px;
+}
+.product-gallery-one-content-product-item-text img {
+    width: 20px;
+    float: left;
+    margin-right: 6px;
+}
+
+.product-gallery-one-content-product-item-text li:last-child i {
+    color: orangered;
+    font-size:12px;
+}
+.product-gallery-one-content-product-item-text li:nth-child(4) a {
+    text-decoration:line-through;
+    color: black;
+    
+  }
+  /*  */
+
+.product-gallery-one {
+    margin-top: 30px;
+}
+.product-gallery-one-content-title {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.product-gallery-one-content-title h2 {
+    color: #333;
+}
+.product-gallery-one-content-title ul li a {
+    color: black;
+}
+.product-gallery-one-content-title ul {
+    display: flex;
+}
+.product-gallery-one-content-title ul li {
+    padding:6px 12px;
+    border: 1px solid #ddd;
+    margin-left: 12px;
+    border-radius:40px;
+}
+
+.product-gallery-one-content-title ul li:hover a {
+    color: rgb(16, 16, 213);
 }
