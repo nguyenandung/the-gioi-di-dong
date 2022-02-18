@@ -57,3 +57,27 @@ function imgAuto(){
     imgNumberLi[index].classList.add('active');
 }
 setInterval(imgAuto,3000);
+
+
+// product slider
+
+const rightbtntwo = document.querySelector('.fa-chevron-right-two');
+const leftbtntwo = document.querySelector('.fa-chevron-left-two');
+const imgNumbertwo= document.querySelectorAll('.slider-product-one-content-items');
+rightbtntwo.addEventListener("click", function() {
+    index = index+1;
+    if(index > imgNumbertwo.length-1){
+        index=0;
+    }
+    document.querySelector('.slider-product-one-content-items-content').style.right = index*100 +"%";
+});
+leftbtntwo.addEventListener("click", function() {
+    index = index-1;
+    if(index <=0){
+        index = imgNumbertwo.length-1;
+    }
+    document.querySelector('.slider-product-one-content-items-content').style.right = index*100+"%";
+});
+
+
+//

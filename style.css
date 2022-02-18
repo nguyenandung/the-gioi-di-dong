@@ -428,6 +428,120 @@ nav ul li:nth-child(9):hover a {
     margin-top:40px;
 }
 .baner-one img {
-    width: 97%;
+    width: 100%;
 }
 
+/* slider product */
+
+
+.slider-product-one-content {
+    background-color:#FB2501;
+    padding: 12px ;
+    width: 100%;
+}
+.slider-product-one-content-title h2 {
+    font-style:italic; 
+
+}
+
+.slider-product-one-content-items {
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:10px;
+    
+}
+
+
+.slider-product-one-content-item {
+    width: 19%;
+    background-color: #fff;
+    padding:50px 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider-product-one-content-item:hover > img {
+    transform:translateY(-20px);
+}
+.slider-product-one-content-item >img {
+    width: 100%;
+    transition:  0.5s;
+}
+.slider-product-one-content-item-text {
+    padding:20px;
+
+}
+.slider-product-one-content-item-text li {
+    margin-bottom: 6px;
+}
+.slider-product-one-content-item-text li:first-child {
+    width: 70%;
+    height: 20px;
+    background-color:red;
+    display:inline-block;
+    margin-bottom:20px;
+    align-items: center;
+    line-height:20px;
+    border-radius: 5px;
+}
+.slider-product-one-content-item-text li:first-child p {
+    color: #fff;
+    font-size:11px;
+}
+.slider-product-one-content-item-text li:first-child img {
+    width: 20px;
+    float: left;
+    margin-right: 6px;
+}
+
+.slider-product-one-content-item-text li:last-child i {
+    color: orangered;
+    font-size:12px;
+}
+.slider-product-one-content-item-text li:nth-child(4) a {
+  text-decoration:line-through;
+  color: black;
+  
+}
+
+/* slider product trượt */
+
+.slider-product-one-content-container{
+    position: relative;
+    overflow: hidden;
+
+}
+.slider-product-one-content-container-btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider-product-one-content-container-btn i {
+    color: #333;font-size:32px;
+    height:50px;
+    width: 25px;
+    background-color: rgb(122, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius:5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-product-one-content-items-content {
+    position: relative;
+    height:550px;
+    transition: all 0.3s ease;
+}
+.slider-product-one-content-items {
+    position: absolute;
+}
+.slider-product-one-content-items:nth-child(2) {
+    transform:translateX(100%);
+}
+.slider-product-one-content-items:nth-child(3) {
+    transform:translateX(200%);
+}
